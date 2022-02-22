@@ -1,5 +1,4 @@
 from django.urls import path, include
- import Url
 from rest_framework import routers, serializers, viewsets
 
 # Serializers define the API representation.
