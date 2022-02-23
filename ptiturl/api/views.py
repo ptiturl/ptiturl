@@ -13,3 +13,8 @@ def urlRedirect(request, slugs):
             return redirect(data.url)
         else:
             return redirect(f"/error/d/{slugs}")
+
+
+def disable(request, slugs):
+    print(slugs)
+    return render(request, "disable.html", {"uri":slugs})
