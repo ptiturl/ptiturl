@@ -16,5 +16,7 @@ def urlRedirect(request, slugs):
 
 
 def disable(request, slugs):
-    print(slugs)
     return render(request, "disable.html", {"uri":slugs})
+
+def not_found(request, slugs):
+    return render(request, "not_found.html", {"uri":slugs})
